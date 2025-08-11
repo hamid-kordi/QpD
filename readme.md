@@ -54,15 +54,15 @@ Here’s the **final structured plan** — each day will tell you:
 
 ### **Week 7–8: Advanced SQL (Window Functions)**
 
-| Day | Goal              | Query Task                                                                     |
-| --- | ----------------- | ------------------------------------------------------------------------------ |
-| 22  | ROW\_NUMBER       | Number films within each category ordered by length.                           |
-| 23  | RANK, DENSE\_RANK | Rank actors by the number of films they appear in.                             |
-| 24  | LEAD & LAG        | Show each rental with the previous and next rental date for the same customer. |
-| 25  | Running totals    | Calculate cumulative revenue per store over time.                              |
-| 26  | Percentiles       | Calculate the 90th percentile of film lengths.                                 |
-| 27  | Complex CASE      | Label films as “Short”, “Medium”, “Long” based on length.                      |
-| 28  | Recap challenge   | Show top 3 customers per store by revenue.                                     |
+| Day | Goal             | Query Task                                                                     |
+| --- | ---------------- | ------------------------------------------------------------------------------ |
+| 22  | ROW_NUMBER       | Number films within each category ordered by length.                           |
+| 23  | RANK, DENSE_RANK | Rank actors by the number of films they appear in.                             |
+| 24  | LEAD & LAG       | Show each rental with the previous and next rental date for the same customer. |
+| 25  | Running totals   | Calculate cumulative revenue per store over time.                              |
+| 26  | Percentiles      | Calculate the 90th percentile of film lengths.                                 |
+| 27  | Complex CASE     | Label films as “Short”, “Medium”, “Long” based on length.                      |
+| 28  | Recap challenge  | Show top 3 customers per store by revenue.                                     |
 
 ---
 
@@ -92,3 +92,4 @@ Here’s the **final structured plan** — each day will tell you:
 
 ---
 
+if you need plane use the assignment tracker!
