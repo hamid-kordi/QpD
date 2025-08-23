@@ -1,6 +1,6 @@
 | Day | Goal                  | Query Task                                                                 |
 |-----|-----------------------|---------------------------------------------------------------------------|
-| - [ ] 1 | INNER JOIN          | List all films and their categories.                                      |
+| - [ * ] 1 | INNER JOIN          | List all films and their categories.                                      |
 | - [ ] 2 | LEFT JOIN           | Find all films that do not have any actors.                               |
 | - [ ] 3 | Multi-table join    | List customers with the title of films they rented and the payment amount.|
 | - [ ] 4 | Filtering joined results | Get all films in the "Action" category released after 2005.          |

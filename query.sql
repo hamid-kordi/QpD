@@ -1,5 +1,20 @@
 -- first day : List all films and their categories.
-select film.title, category.name,film.description
-from film
-inner join  film_category on film_category.film_id = film.film_id  
-inner join category on film_category.category_id = category.category_id;
+
+SELECT
+	FILM.TITLE,
+	CATEGORY.NAME,
+	FILM.DESCRIPTION
+FROM
+	FILM
+	INNER JOIN FILM_CATEGORY ON FILM_CATEGORY.FILM_ID = FILM.FILM_ID
+	INNER JOIN CATEGORY ON FILM_CATEGORY.CATEGORY_ID = CATEGORY.CATEGORY_ID;
+
+-- Find all films that do not have any actors.
+SELECT
+    FILM.FILM_ID,
+    FILM.TITLE
+FROM
+    FILM
+    LEFT JOIN FILM_ACTOR ON FILM.FILM_ID = FILM_ACTOR.FILM_ID
+WHERE
+    FILM_ACTOR.FILM_ID IS NULL;
