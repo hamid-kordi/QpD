@@ -1,4 +1,4 @@
--- first day : List all films and their categories.
+-- 1th day : List all films and their categories.
 
 SELECT
 	FILM.TITLE,
@@ -9,7 +9,7 @@ FROM
 	INNER JOIN FILM_CATEGORY ON FILM_CATEGORY.FILM_ID = FILM.FILM_ID
 	INNER JOIN CATEGORY ON FILM_CATEGORY.CATEGORY_ID = CATEGORY.CATEGORY_ID;
 
--- Find all films that do not have any actors.
+-- 2th days : Find all films that do not have any actors.
 SELECT
     FILM.FILM_ID,
     FILM.TITLE
@@ -18,3 +18,17 @@ FROM
     LEFT JOIN FILM_ACTOR ON FILM.FILM_ID = FILM_ACTOR.FILM_ID
 WHERE
     FILM_ACTOR.FILM_ID IS NULL;
+
+
+-- 3th days : List customers with the title of films they rented and the payment amount.
+
+SELECT
+	CUSTOMER.FIRST_NAME,
+	FILM.TITLE,
+	PAYMENT.AMOUNT
+FROM
+	CUSTOMER
+	LEFT JOIN RENTAL ON RENTAL.CUSTOMER_ID = CUSTOMER.CUSTOMER_ID
+	LEFT JOIN INVENTORY ON RENTAL.INVENTORY_ID = INVENTORY.INVENTORY_ID
+	LEFT JOIN FILM ON FILM.FILM_ID = INVENTORY.FILM_ID
+	LEFT JOIN PAYMENT ON PAYMENT.RENTAL_ID = RENTAL.RENTAL_ID;
